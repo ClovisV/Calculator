@@ -1,19 +1,18 @@
-/************************************************************************************************************************
-* Name: Calculator
-*
-* Author: Clovis JANICOT-TIXIER
-* Description: A calculator in command line in C#
-* Date: 24/09/2019
-* Version: 2.1
-************************************************************************************************************************/
-
 using System.IO;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Reflection;
+using System.Diagnostics;
 
-public class Program
+[assembly:AssemblyTitle("Calculator in command line in C#")]
+[assembly:AssemblyCompany("Clovis Janicot-Tixier")]
+[assembly:AssemblyFileVersion("2.1.0.0")]
+[assembly:AssemblyProduct("Calculator")]
+[assembly:AssemblyCopyright("Copyright(c) 2019 Clovis Janicot-Tixier")]
+
+public class Calculator
 {
 
 	public class Node 
@@ -29,14 +28,14 @@ public class Program
 		}
 	}
 	
-	static void ProgramDescription()
+	static void CalculatorDescription()
 	{
 		Console.ForegroundColor = ConsoleColor.Cyan;
 		Console.WriteLine("\n***************************************");
-	    Console.WriteLine("Hello World!\nMy first program in C#: a calculator in command line. Enjoy! ;)");
+	    Console.WriteLine("Hello World!\nMy first Calculator in C#: a calculator in command line. Enjoy! ;)");
 	    Console.WriteLine("\nCan you choose an operation with parentheses, numbers with or without negative sign and operators, please?");
 	    Console.WriteLine("The operators are: addition with '+',  substraction with '-', multiplication with '*', division with '/', remainder with '%', whole part with '\\'.");
-	    Console.WriteLine("In addition, the program is based on the parentheses to build the tree that will help it calculate this operation if there are at least two little operations.");
+	    Console.WriteLine("In addition, the Calculator is based on the parentheses to build the tree that will help it calculate this operation if there are at least two little operations.");
 	    Console.WriteLine("For example: 2+(6-8) = 2+-2 = 0 or ((45--8.90)/(6,89*890))%94 = (53.90/6132.1)%94 ~= 0.00878981099%94 ~= 0.00878981099.");
 		Console.WriteLine("***************************************\n");
 		Console.ResetColor();
@@ -339,7 +338,7 @@ public class Program
 		return Calculate(double.Parse(treeInput[0].leftNode.nodeContent),treeInput[0].nodeContent,double.Parse(treeInput[0].rightNode.nodeContent));
 	}
 	
-	static void ProgramRetryOrExit(int secondWait)
+	static void CalculatorRetryOrExit(int secondWait)
 	{
 		Console.WriteLine("\nRetry? (Y/N)");
 		string inputKey = Console.ReadKey(true).KeyChar.ToString();
@@ -352,7 +351,7 @@ public class Program
 		{
 			Console.ForegroundColor = ConsoleColor.Magenta;
 			Console.WriteLine("\n---------------------------------------");
-			Console.WriteLine("End of program, thanks you for its use! ;)");
+			Console.WriteLine("End of Calculator, thanks you for its use! ;)");
 			while (secondWait >= 0)
 			{
 				Console.Write("\rClosing in {0} seconds..",secondWait.ToString());
@@ -395,7 +394,7 @@ public class Program
 		},
 		() =>
 		{
-			ProgramDescription();
+			CalculatorDescription();
 			string[] arrayOriginal = CreateArrayFromKeyboard();
 			try
 			{
@@ -415,7 +414,7 @@ public class Program
 			finally
 			{
 				nbThread++;
-				ProgramRetryOrExit(10);
+				CalculatorRetryOrExit(10);
 			}
 		});
 	}
