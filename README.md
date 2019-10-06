@@ -1,6 +1,7 @@
 # Calculator
 
 A calculator in command line in C# with .net core 3 and Visual Studio Code on win10-x64 for many platforms.
+
 To launch the application, going to in "\bin\Release\netcoreapp3.0\your_platform\" and run it.
 
 Here, the supported platforms:
