@@ -1,0 +1,11 @@
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\win-x86-aot\Calculator.exe
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\win-x86-aot\Calculator.deps.json
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\win-x86-aot\Calculator.runtimeconfig.json
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\win-x86-aot\Calculator.runtimeconfig.dev.json
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\win-x86-aot\Calculator.dll
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\win-x86-aot\Calculator.pdb
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\win-x86-aot\Calculator.csprojAssemblyReference.cache
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\win-x86-aot\Calculator.AssemblyInfoInputs.cache
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\win-x86-aot\Calculator.AssemblyInfo.cs
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\win-x86-aot\Calculator.dll
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\win-x86-aot\Calculator.pdb

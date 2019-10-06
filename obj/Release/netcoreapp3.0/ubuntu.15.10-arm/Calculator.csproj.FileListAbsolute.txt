@@ -1,0 +1,11 @@
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.deps.json
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.runtimeconfig.json
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.runtimeconfig.dev.json
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.dll
+C:\DEV\Calculator\Calculator\bin\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.pdb
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.csprojAssemblyReference.cache
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.AssemblyInfoInputs.cache
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.AssemblyInfo.cs
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.dll
+C:\DEV\Calculator\Calculator\obj\Release\netcoreapp3.0\ubuntu.15.10-arm\Calculator.pdb
