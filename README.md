@@ -2,7 +2,7 @@
 
 A calculator in command line in C# with .NET Core 3 and Visual Studio Code on win10-x64 for many platforms and tested on ubuntu.18.04-x64.
 
-To launch the application, download the project and .NET Core 3 SDK and/or run "bash Calculator.sh" in command line and follow the instructions.
+To launch the application, download the project and run "bash Calculator.sh" in command line and follow the instructions.
 
 Here, the supported platforms:
   
