@@ -362,7 +362,6 @@ namespace Calculator
 		{
 		    int nbThread = 1;
 		    List<Node> tree = new List<Node>();
-            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 		    Parallel.Invoke(() =>
 		    {
 			    Console.CancelKeyPress += new ConsoleCancelEventHandler((object sender, ConsoleCancelEventArgs e) =>
