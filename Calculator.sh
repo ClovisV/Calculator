@@ -14,15 +14,25 @@ echo " "
 read platform
 echo " "
 cd "../../.."
-echo "Then, have you .NET Core 3 installed (Y/N)?"
+echo "Then, have you .NET Core 3 SDK installed (Y/N)?"
 read answer
-if [ $answer == "n" ] || [ $answer == "N" ] ; then
-	"Installation from https://dotnet.microsoft.com/download/dotnet-core thanks to Microsoft..."
-	./dotnet-install.sh -c Current
+if [ $answer == "y" ] || [ $answer == "Y" ] ; then
+	dotnet publish -r $platform -c Release
+	rm -r obj
+	rm -r bin/Debug
+else
+	echo "Do you want to install it (Y/N)?"
+	read answerTwo
+	if [ $answerTwo == "y" ] || [ $answerTwo == "Y" ] ; then
+		echo "Installation from https://dotnet.microsoft.com/download/dotnet-core thanks to Microsoft..."
+		if [[ $platform == win* ]] ; then
+			curl -sSL https://dot.net/v1/dotnet-install.sh | bash powershell | powershell.exe -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://dot.net/v1/dotnet-install.ps1'))) -Channel Current"
+		else
+			curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel Current
+		fi
+	fi
 fi
-dotnet publish -r $platform -c Release
-rm -r obj
-rm -r bin/Debug
+
 cd $folderPath/$platform
 for file in $platform/*; do rm $(basename $file); done;
 cd publish
